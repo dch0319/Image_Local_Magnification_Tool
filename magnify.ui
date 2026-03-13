@@ -62,6 +62,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -96,6 +97,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -129,6 +131,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -168,6 +171,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -207,6 +211,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -303,6 +308,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -337,6 +343,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -371,6 +378,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -488,6 +496,7 @@
          <font>
           <family>Adobe Devanagari</family>
           <pointsize>12</pointsize>
+          <underline>false</underline>
          </font>
         </property>
         <property name="text">
@@ -522,6 +531,7 @@
          <font>
           <family>Adobe Devanagari</family>
           <pointsize>12</pointsize>
+          <underline>false</underline>
          </font>
         </property>
         <property name="text">
@@ -615,6 +625,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -624,7 +635,7 @@
            <bool>false</bool>
           </property>
           <property name="text">
-           <string>save</string>
+           <string>保存</string>
           </property>
          </widget>
         </item>
@@ -651,6 +662,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -660,7 +672,7 @@
            <bool>false</bool>
           </property>
           <property name="text">
-           <string>reset</string>
+           <string>重置</string>
           </property>
          </widget>
         </item>
@@ -687,6 +699,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -696,7 +709,7 @@
            <bool>false</bool>
           </property>
           <property name="text">
-           <string>upload</string>
+           <string>上传</string>
           </property>
          </widget>
         </item>
@@ -723,19 +736,20 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
            <enum>Qt::LeftToRight</enum>
           </property>
           <property name="text">
-           <string>mag_</string>
+           <string/>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
           <property name="placeholderText">
-           <string>prefix</string>
+           <string>前缀</string>
           </property>
          </widget>
         </item>
@@ -762,19 +776,20 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
            <enum>Qt::RightToLeft</enum>
           </property>
           <property name="text">
-           <string>.jpg</string>
+           <string>.png</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
           <property name="placeholderText">
-           <string>suffix</string>
+           <string>后缀</string>
           </property>
          </widget>
         </item>
@@ -819,10 +834,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>resolution-x</string>
+           <string>分辨率-x</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -852,6 +868,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -898,6 +915,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -945,10 +963,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>resolution-y</string>
+           <string>分辨率-y</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -978,6 +997,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1024,6 +1044,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1058,10 +1079,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>crop-top/bottom</string>
+           <string>裁剪上/下</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1091,6 +1113,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1136,6 +1159,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1182,6 +1206,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1216,10 +1241,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>crop-left/right</string>
+           <string>裁剪左/右</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1249,6 +1275,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1294,6 +1321,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1340,6 +1368,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1378,10 +1407,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>interval-x</string>
+           <string>间距-x</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1411,6 +1441,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1457,6 +1488,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1491,10 +1523,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>linewidth</string>
+           <string>线宽</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1524,6 +1557,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1539,7 +1573,7 @@
            <number>16777215</number>
           </property>
           <property name="value">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="displayIntegerBase">
            <number>10</number>
@@ -1569,6 +1603,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1584,7 +1619,7 @@
            <number>16777215</number>
           </property>
           <property name="value">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="displayIntegerBase">
            <number>10</number>
@@ -1615,6 +1650,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1649,10 +1685,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>interval-y</string>
+           <string>间距-y</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1683,10 +1720,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>border</string>
+           <string>边距</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1717,6 +1755,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1750,6 +1789,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1796,6 +1836,7 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
@@ -1847,10 +1888,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>aspect ratio</string>
+           <string>宽高比</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1881,10 +1923,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>position</string>
+           <string>放大窗口位置</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1914,6 +1957,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1929,7 +1973,7 @@
            <number>4</number>
           </property>
           <property name="value">
-           <number>2</number>
+           <number>1</number>
           </property>
          </widget>
         </item>
@@ -1956,6 +2000,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -1993,10 +2038,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>magnification</string>
+           <string>放大倍数</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2027,10 +2073,11 @@
            <font>
             <family>Adobe Devanagari</family>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="text">
-           <string>number</string>
+           <string>放大窗口数量</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2060,6 +2107,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -2116,13 +2164,14 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
            <enum>Qt::LeftToRight</enum>
           </property>
           <property name="text">
-           <string>1.5</string>
+           <string>4.0</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -2169,6 +2218,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="styleSheet">
@@ -2215,6 +2265,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="styleSheet">
@@ -2261,6 +2312,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -2331,6 +2383,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="styleSheet">
@@ -2377,6 +2430,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -2426,6 +2480,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -2499,6 +2554,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -2572,6 +2628,7 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+            <underline>false</underline>
            </font>
           </property>
           <property name="layoutDirection">
@@ -2663,7 +2720,7 @@
      <x>0</x>
      <y>0</y>
      <width>1891</width>
-     <height>30</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

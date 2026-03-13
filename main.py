@@ -86,12 +86,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
 
         self.check_range('x')
 
-    # def comboBoxTextCenter(self):
-    #     items = self.ui.centralwidget.findChildren(QtWidgets.QComboBox)
-    #     for item in items:
-    #         item.setEditable(True)
-    #         item.lineEdit().setAlignment(QtCore.Qt.AlignCenter)
-
     def obtain_ckpt(self):
         ckpt = dict()
         ckpt['prefix'] = self.ui.lineEdit_prefix.text()
@@ -254,8 +248,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
                                                    QtWidgets.QMessageBox.No)
             if reply == QtWidgets.QMessageBox.No:
                 return
-        self.ui.lineEdit_prefix.setText('mag_')
-        self.ui.lineEdit_suffix.setText('.jpg')
+        self.ui.lineEdit_prefix.setText('')
+        self.ui.lineEdit_suffix.setText('.png')
         self.ui.spinBox_resX.setValue(720)
         self.ui.spinBox_resY.setValue(720)
         self.ui.spinBox_cropTop.setValue(0)
@@ -268,7 +262,7 @@ class MyMainWindow(QtWidgets.QMainWindow):
         self.ui.spinBox_linewidth.setValue(8)
         self.ui.lineEdit_ratio.setText('1.5')
         self.ui.lineEdit_magnification.setText('4.0')
-        self.ui.spinBox_num.setValue(2)
+        self.ui.spinBox_num.setValue(1)
         self.ui.comboBox_position.setCurrentIndex(1)
         self.ui.pushButton_position1.setChecked(True)
         # self.ui.comboBox_color1.setCurrentIndex(0)
@@ -623,7 +617,8 @@ class MyMainWindow(QtWidgets.QMainWindow):
             elif xCenter + wMag_resize // 2 > w_resize - linewidthHalf:
                 xCenter = w_resize - linewidthHalf - wMag_resize // 2
                 beyond_boundary = True
-            if yCenter - wMag_resize // 2 < linewidthHalf:
+            # ✅ 修复：将 wMag_resize 改为 hMag_resize
+            if yCenter - hMag_resize // 2 < linewidthHalf:
                 yCenter = linewidthHalf + hMag_resize // 2
                 beyond_boundary = True
             elif yCenter + hMag_resize // 2 > h_resize - linewidthHalf:
@@ -666,47 +661,6 @@ class MyMainWindow(QtWidgets.QMainWindow):
 
             xEnd = int(xStart + wMag_resize)
             yEnd = int(yStart + hMag_resize)
-
-            # if xStart < linewidthHalf or xEnd > w_resize-linewidthHalf or yStart < linewidthHalf or yEnd > h_resize-linewidthHalf:
-            #     if xStart < linewidthHalf:
-            #         xStart = linewidthHalf
-            #         xEnd = int(xStart + wMag_resize)
-            #         xCenter = xStart + wMag_resize / 2
-            #     elif xEnd > w_resize - linewidthHalf:
-            #         xEnd = w_resize - linewidthHalf
-            #         xStart = int(xEnd - wMag_resize)
-            #         xCenter = xEnd - wMag_resize / 2
-            #     if yStart < linewidthHalf:
-            #         yStart = linewidthHalf
-            #         yEnd = int(yStart + hMag_resize)
-            #         yCenter = yStart + hMag_resize / 2
-            #     elif yEnd > h_resize - linewidthHalf:
-            #         yEnd = h_resize - linewidthHalf
-            #         yStart = int(yEnd - hMag_resize)
-            #         yCenter = yEnd - hMag_resize / 2
-            #
-            #     ratioRelativeOffsetX = xCenter / w_resize
-            #     ratioRelativeOffsetY = yCenter / h_resize
-            #
-            #     ratioOffsetY = ratioCropTop + ratioRelativeOffsetY * (1 - ratioCropTop - ratioCropBottom)
-            #     ratioOffsetX = ratioCropLeft + ratioRelativeOffsetX * (1 - ratioCropLeft - ratioCropRight)
-            #     self.ratioOffset[idx_mag] = [ratioOffsetY, ratioOffsetX]
-
-                # if xStart < linewidthHalf or yStart < linewidthHalf or xEnd > w_resize-linewidthHalf or yEnd > h_resize-linewidthHalf:
-                #     warning_times += 1
-                #     global_warning_times += 1
-                # else:
-                #     break
-
-            # if warning_times == 0:
-            #     self.ratioOffset_history[idx_mag] = copy.deepcopy(self.ratioOffset[idx_mag])
-            # elif warning_times == 1:
-            #     self.ratioOffset[idx_mag] = copy.deepcopy(self.ratioOffset_history[idx_mag])
-            #     self.ui.lineEdit_message.setText(f'The position of "mag {idx_mag+1}" is out of range. Keep the previous one.')
-            # elif warning_times == 2:
-            #     self.ratioOffset[idx_mag] = copy.deepcopy(self.ratioOffset_history[idx_mag])
-            #     self.ui.lineEdit_message.setText(f'The size of "mag {idx_mag + 1}" is out of range. Do not display.')
-            #     continue
 
             cv2.rectangle(self.image_preview, (xStart, yStart), (xEnd-1, yEnd-1), color, thickness=linewidth)
 
@@ -948,8 +902,5 @@ class MyMainWindow(QtWidgets.QMainWindow):
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = MyMainWindow()
-    # ui = MyMainWindow()
-    # ui.setupUi(MainWindow)
     MainWindow.show()
-
     sys.exit(app.exec_())
